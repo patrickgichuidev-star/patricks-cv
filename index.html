@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GICHUI | Engineering the Future of Healthcare</title>
+    
+    <!-- FAVICON ICON (Appears in Tabs and Search Results) -->
+    <link rel="icon" href="https://fav.farm/🛡️">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Meta Tags for Search Engines (SEO) -->
+    <meta name="description" content="Patrick Gichui: Software Architect building the future of healthcare equality in Kenya.">
+    <meta name="keywords" content="Patrick Gichui, Insta Med, Kenya Software Engineer, Telemedicine AI">
+
     <style>
         :root {
             --accent: #00f2ff;
@@ -26,20 +32,16 @@
             overflow-x: hidden;
         }
 
-        .mono {
-            font-family: 'JetBrains Mono', monospace;
-        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
 
+        /* Futuristic Background */
         .cyber-grid {
             background-size: 100px 100px;
-            background-image:
+            background-image: 
                 linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             z-index: -1;
         }
 
@@ -54,6 +56,7 @@
             opacity: 0.5;
         }
 
+        /* Glassmorphism */
         .futuristic-card {
             background: var(--card-glass);
             backdrop-filter: blur(20px);
@@ -69,6 +72,7 @@
             transform: translateY(-5px);
         }
 
+        /* Animated Scanning Line */
         .scan-line {
             width: 100%;
             height: 2px;
@@ -80,13 +84,8 @@
         }
 
         @keyframes scan {
-            0% {
-                top: 0%;
-            }
-
-            100% {
-                top: 100%;
-            }
+            0% { top: 0%; }
+            100% { top: 100%; }
         }
 
         .nav-blur {
@@ -134,25 +133,21 @@
         }
     </style>
 </head>
-
 <body>
 
     <div class="cyber-grid"></div>
     <div class="glow-orb" style="top: -100px; left: -100px;"></div>
-    <div class="glow-orb"
-        style="bottom: -200px; right: -100px; background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);">
-    </div>
+    <div class="glow-orb" style="bottom: -200px; right: -100px; background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);"></div>
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur px-8 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div
-                    class="w-10 h-10 border border-cyan-500 flex items-center justify-center font-bold text-cyan-500 rotate-45">
+                <div class="w-10 h-10 border border-cyan-500 flex items-center justify-center font-bold text-cyan-500 rotate-45">
                     <span class="-rotate-45">G</span>
                 </div>
                 <div class="hidden sm:block">
-                    <h1 class="text-sm font-black tracking-widest uppercase">Gichui <span
-                            class="text-cyan-500">Systems</span></h1>
+                    <h1 class="text-sm font-black tracking-widest uppercase">Gichui <span class="text-cyan-500">Systems</span></h1>
                     <p class="text-[8px] mono text-slate-500 tracking-widest leading-none">TERMINAL.V2.5.0</p>
                 </div>
             </div>
@@ -165,15 +160,15 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
         <div class="max-w-4xl w-full text-center relative">
-            <div class="mono text-[10px] text-cyan-500 mb-4 tracking-[0.5em] animate-pulse">DEPLOYING SOCIO-TECHNICAL
-                SOLUTION...</div>
+            <div class="mono text-[10px] text-cyan-500 mb-4 tracking-[0.5em] animate-pulse">DEPLOYING SOCIO-TECHNICAL SOLUTION...</div>
             <h1 class="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
-                EQUALITY <br /> <span class="text-neon italic">BY ARCHITECTURE.</span>
+                EQUALITY <br/> <span class="text-neon italic">BY ARCHITECTURE.</span>
             </h1>
             <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                Patrick Gichui is a software architect bridging the healthcare gap. Engineering
+                Patrick Gichui is a software architect bridging the healthcare gap. Engineering 
                 <span class="text-white border-b border-cyan-500">decentralized medical intelligence</span> for the 99%.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
@@ -183,6 +178,7 @@
         </div>
     </section>
 
+    <!-- Mission / Problem -->
     <section id="mission" class="py-32 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -191,14 +187,12 @@
                     <div class="mono text-[10px] text-cyan-500 mb-6 font-bold">ANALYSIS_LOG: HEALTHCARE_INEQUITY</div>
                     <h2 class="text-3xl font-bold mb-6">The Systemic <span class="text-cyan-500">Failure.</span></h2>
                     <p class="text-slate-400 text-sm leading-loose mb-8">
-                        In the current landscape, quality healthcare is locked behind economic firewalls.
-                        Millions in East Africa are excluded from specialist consultations due to geographic
-                        and financial bottlenecks.
+                        In the current landscape, quality healthcare is locked behind economic firewalls. 
+                        Millions in East Africa are excluded from specialist consultations due to geographic 
+                        and financial bottlenecks. 
                     </p>
                     <div class="p-6 bg-cyan-500/5 border-l-2 border-cyan-500">
-                        <p class="text-xs italic text-slate-300">"We don't just build apps; we engineer equity. Our
-                            technology serves as a bridge between high-tier medical expertise and those the system has
-                            forgotten."</p>
+                        <p class="text-xs italic text-slate-300">"We don't just build apps; we engineer equity. Our technology serves as a bridge between high-tier medical expertise and those the system has forgotten."</p>
                     </div>
                 </div>
                 <div class="space-y-6">
@@ -213,11 +207,9 @@
                         </div>
                     </div>
                     <div class="futuristic-card p-10 rounded-lg">
-                        <h4 class="text-xs font-bold text-cyan-500 mb-4 tracking-widest uppercase">Target Objective //
-                            2028</h4>
+                        <h4 class="text-xs font-bold text-cyan-500 mb-4 tracking-widest uppercase">Target Objective // 2028</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Establishment of an independent engineering HQ in Nairobi. Scaling **Insta Med** to support
-                            1M+ active sessions across the East African region.
+                            Establishment of an independent engineering HQ in Nairobi. Scaling **Insta Med** to support 1M+ active sessions across the East African region.
                         </p>
                     </div>
                 </div>
@@ -225,6 +217,7 @@
         </div>
     </section>
 
+    <!-- Ventures (Insta Med) -->
     <section id="ventures" class="py-32 px-6 relative">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20">
@@ -233,22 +226,22 @@
             </div>
 
             <div class="grid lg:grid-cols-12 gap-6">
-                <div
-                    class="lg:col-span-7 futuristic-card p-1 rounded-2xl overflow-hidden min-h-[400px] flex items-center justify-center bg-slate-900/50">
+                <!-- Tech Visual -->
+                <div class="lg:col-span-7 futuristic-card p-1 rounded-2xl overflow-hidden min-h-[400px] flex items-center justify-center bg-slate-900/50">
                     <div class="relative w-full h-full p-12 flex flex-col justify-between">
                         <div class="flex justify-between items-start">
                             <div class="mono text-[10px] text-cyan-500">SYS_VIEW: TELEMED_TERMINAL</div>
-                            <div
-                                class="text-[8px] px-2 py-1 border border-red-500 text-red-500 animate-pulse uppercase font-bold">
-                                Live Data Feed</div>
+                            <div class="text-[8px] px-2 py-1 border border-red-500 text-red-500 animate-pulse uppercase font-bold">Live Data Feed</div>
                         </div>
+                        
+                        <!-- Symbolic AI UI -->
                         <div class="space-y-4">
                             <div class="h-1 w-1/3 bg-cyan-500"></div>
                             <div class="h-1 w-1/4 bg-cyan-500 opacity-50"></div>
                             <div class="h-1 w-1/2 bg-cyan-500 opacity-30"></div>
-                            <h3 class="text-4xl font-bold tracking-tighter uppercase">AI Triage <br /> <span
-                                    class="text-slate-500">Core</span></h3>
+                            <h3 class="text-4xl font-bold tracking-tighter uppercase">AI Triage <br/> <span class="text-slate-500">Core</span></h3>
                         </div>
+
                         <div class="grid grid-cols-3 gap-4">
                             <div class="h-20 border border-slate-800 rounded flex flex-col items-center justify-center">
                                 <span class="text-cyan-500 text-xs font-bold">MAP</span>
@@ -265,19 +258,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Content -->
                 <div class="lg:col-span-5 space-y-6">
                     <div class="futuristic-card p-8 rounded-2xl">
                         <h4 class="text-lg font-bold mb-4 uppercase tracking-tighter">The Volunteer Network</h4>
                         <p class="text-sm text-slate-400 leading-loose">
-                            Integrating a peer-to-peer verification system that allows licensed medical professionals to
-                            volunteer their time in a secure, high-latency optimized environment.
+                            Integrating a peer-to-peer verification system that allows licensed medical professionals to volunteer their time in a secure, high-latency optimized environment.
                         </p>
                     </div>
                     <div class="futuristic-card p-8 rounded-2xl">
                         <h4 class="text-lg font-bold mb-4 uppercase tracking-tighter">Proximity Intelligence</h4>
                         <p class="text-sm text-slate-400 leading-loose">
-                            Real-time hospital mapping utilizing spatial data to guide patients to specialized care
-                            facilities within seconds of a critical event.
+                            Real-time hospital mapping utilizing spatial data to guide patients to specialized care facilities within seconds of a critical event.
                         </p>
                     </div>
                     <a href="#contact" class="w-full btn-futuristic !py-6">Request Technical Demo</a>
@@ -286,27 +279,30 @@
         </div>
     </section>
 
+    <!-- Dossier (CV) -->
     <section id="dossier" class="py-32 px-6">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-20">
                 <div class="tag-pill mb-4 text-cyan-500 inline-block">Subject Dossier</div>
                 <h2 class="text-4xl font-bold">Patrick <span class="text-cyan-500">Gichui.</span></h2>
             </div>
+
             <div class="grid md:grid-cols-3 gap-6">
+                <!-- Certs -->
                 <div class="space-y-6">
                     <div class="futuristic-card p-6 rounded-xl">
                         <div class="mono text-[8px] text-cyan-500 mb-4">CERTIFICATION_ID: HP_LIFE</div>
                         <h5 class="font-bold text-sm mb-1 uppercase">Business IT Specialist</h5>
-                        <p class="text-[10px] text-slate-500">Strategic market scaling & commercial logic certified by
-                            HP Life.</p>
+                        <p class="text-[10px] text-slate-500">Strategic market scaling & commercial logic certified by HP Life.</p>
                     </div>
                     <div class="futuristic-card p-6 rounded-xl">
                         <div class="mono text-[8px] text-cyan-500 mb-4">AWARD_ID: KSEF_REGIONAL</div>
                         <h5 class="font-bold text-sm mb-1 uppercase">Regional Finalist '25 '26</h5>
-                        <p class="text-[10px] text-slate-500">Twice-recognized for excellence in Computer Science &
-                            Chemical Engineering.</p>
+                        <p class="text-[10px] text-slate-500">Twice-recognized for excellence in Computer Science & Chemical Engineering.</p>
                     </div>
                 </div>
+
+                <!-- Main CV -->
                 <div class="md:col-span-2 futuristic-card p-10 rounded-2xl relative overflow-hidden">
                     <div class="scan-line" style="animation-duration: 5s; opacity: 0.2;"></div>
                     <div class="flex justify-between items-start mb-10">
@@ -318,34 +314,36 @@
                             <span class="text-cyan-500 mono text-xs">V.2026.04</span>
                         </div>
                     </div>
+
                     <div class="space-y-10">
                         <div>
-                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Core Competencies
-                            </h4>
+                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Core Competencies</h4>
                             <div class="grid grid-cols-2 gap-4">
-                                <div class="text-xs text-slate-300 flex items-center gap-2"><span
-                                        class="w-1 h-1 bg-cyan-500"></span> Full Stack (Next.js/Node)</div>
-                                <div class="text-xs text-slate-300 flex items-center gap-2"><span
-                                        class="w-1 h-1 bg-cyan-500"></span> AI/ML Implementation</div>
-                                <div class="text-xs text-slate-300 flex items-center gap-2"><span
-                                        class="w-1 h-1 bg-cyan-500"></span> Firebase Architecture</div>
-                                <div class="text-xs text-slate-300 flex items-center gap-2"><span
-                                        class="w-1 h-1 bg-cyan-500"></span> IoT & Embedded Systems</div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> Full Stack (Next.js/Node)
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> AI/ML Implementation
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> Firebase Architecture
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> IoT & Embedded Systems
+                                </div>
                             </div>
                         </div>
+
                         <div>
-                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Active
-                                Deployments</h4>
+                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Active Deployments</h4>
                             <div class="space-y-6">
                                 <div>
                                     <p class="text-sm font-bold">Founder @ Insta Med</p>
-                                    <p class="text-xs text-slate-500">Engineering a non-profit volunteer medical
-                                        consultation framework.</p>
+                                    <p class="text-xs text-slate-500">Engineering a non-profit volunteer medical consultation framework.</p>
                                 </div>
                                 <div>
                                     <p class="text-sm font-bold">Lead Engineer @ KSEF Projects</p>
-                                    <p class="text-xs text-slate-500">Designing automated chemical extraction sensors
-                                        (Regional Winner).</p>
+                                    <p class="text-xs text-slate-500">Designing automated chemical extraction sensors (Regional Winner).</p>
                                 </div>
                             </div>
                         </div>
@@ -355,25 +353,28 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-32 px-6 relative">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <div class="tag-pill mb-4 text-cyan-500 inline-block">Direct Uplink</div>
                 <h2 class="text-4xl font-bold tracking-tight">INITIATE <span class="text-cyan-500">CONTACT.</span></h2>
             </div>
+            
             <div class="grid md:grid-cols-3 gap-6">
                 <a href="mailto:patrickgichui.dev@gmail.com" class="futuristic-card p-8 rounded-xl text-center group">
                     <div class="text-cyan-500 text-2xl mb-4 group-hover:scale-110 transition">✉</div>
                     <h4 class="text-[10px] mono text-slate-500 uppercase mb-2">Secure Email</h4>
                     <p class="text-xs font-bold break-all">patrickgichui.dev@gmail.com</p>
                 </a>
+                
                 <a href="tel:0722654031" class="futuristic-card p-8 rounded-xl text-center group">
                     <div class="text-cyan-500 text-2xl mb-4 group-hover:scale-110 transition">📞</div>
                     <h4 class="text-[10px] mono text-slate-500 uppercase mb-2">Direct Line</h4>
                     <p class="text-xs font-bold">0722 654 031</p>
                 </a>
-                <a href="https://instagram.com/wtfglegato" target="_blank"
-                    class="futuristic-card p-8 rounded-xl text-center group">
+                
+                <a href="https://instagram.com/wtfglegato" target="_blank" class="futuristic-card p-8 rounded-xl text-center group">
                     <div class="text-cyan-500 text-2xl mb-4 group-hover:scale-110 transition">📸</div>
                     <h4 class="text-[10px] mono text-slate-500 uppercase mb-2">Social Node</h4>
                     <p class="text-xs font-bold">@wtfglegato</p>
@@ -382,15 +383,14 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-20 px-6 text-center border-t border-white/5 relative overflow-hidden">
         <div class="glow-orb" style="bottom: -250px; left: 50%; translate: -50% 0; width: 600px; height: 300px;"></div>
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold mb-8 italic uppercase tracking-tighter">Invest in <span
-                    class="text-neon">Equity.</span></h2>
+            <h2 class="text-2xl font-bold mb-8 italic uppercase tracking-tighter">Invest in <span class="text-neon">Equity.</span></h2>
             <p class="mono text-[8px] text-slate-600 tracking-[0.8em]">END_TRANSMISSION // PATRICK GICHUI 2026</p>
         </div>
     </footer>
 
 </body>
-
 </html>
