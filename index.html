@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GICHUI | Engineering the Future of Healthcare</title>
     
-    <!-- FAVICON ICON -->
-    <link rel="icon" href="https://i.pinimg.com/1200x/47/31/40/47314047c396f9df922778af484ebde6.jpg">
+    <!-- FAVICON ICON (Appears in Tabs and Search Results) -->
+    <link rel="icon" href="https://fav.farm/🛡️">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
+    <!-- Meta Tags for Search Engines (SEO) -->
+    <meta name="description" content="Patrick Gichui: Software Architect building the future of healthcare equality in Kenya.">
+    <meta name="keywords" content="Patrick Gichui, Insta Med, Kenya Software Engineer, Telemedicine AI">
+
     <style>
         :root {
             --accent: #00f2ff;
             --accent-glow: rgba(0, 242, 255, 0.3);
             --secondary: #fbbf24;
             --bg-obsidian: #050505;
-            --card-glass: rgba(10, 15, 25, 0.7);
+            --card-glass: rgba(15, 23, 42, 0.4);
         }
 
         body {
@@ -30,7 +34,7 @@
 
         .mono { font-family: 'JetBrains Mono', monospace; }
 
-        /* Background Visuals */
+        /* Futuristic Background */
         .cyber-grid {
             background-size: 100px 100px;
             background-image: 
@@ -38,37 +42,24 @@
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            z-index: -2;
-        }
-
-        /* Integration of Pinterest Image as a subtle background texture */
-        .image-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url('https://i.pinimg.com/1200x/47/31/40/47314047c396f9df922778af484ebde6.jpg');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.15;
-            mix-blend-mode: overlay;
             z-index: -1;
-            pointer-events: none;
         }
 
         .glow-orb {
             position: absolute;
-            width: 600px;
-            height: 600px;
+            width: 500px;
+            height: 500px;
             background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
             border-radius: 50%;
             filter: blur(80px);
             z-index: -1;
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
         /* Glassmorphism */
         .futuristic-card {
             background: var(--card-glass);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.05);
             border-top: 1px solid rgba(255, 255, 255, 0.15);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -77,18 +68,19 @@
 
         .futuristic-card:hover {
             border-color: var(--accent);
-            box-shadow: 0 0 25px var(--accent-glow);
+            box-shadow: 0 0 20px var(--accent-glow);
             transform: translateY(-5px);
         }
 
+        /* Animated Scanning Line */
         .scan-line {
             width: 100%;
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--accent), transparent);
             position: absolute;
             top: 0;
-            animation: scan 4s linear infinite;
-            opacity: 0.3;
+            animation: scan 3s linear infinite;
+            opacity: 0.5;
         }
 
         @keyframes scan {
@@ -97,7 +89,7 @@
         }
 
         .nav-blur {
-            background: rgba(5, 5, 5, 0.85);
+            background: rgba(5, 5, 5, 0.8);
             backdrop-filter: saturate(180%) blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -130,35 +122,20 @@
         }
 
         .tag-pill {
-            background: rgba(0, 242, 255, 0.1);
-            border: 1px solid var(--accent);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 4px 12px;
             border-radius: 4px;
             font-size: 10px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: var(--accent);
-        }
-
-        .pinterest-feature-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(0.5) contrast(1.2) brightness(0.8);
-            transition: 0.5s;
-        }
-
-        .pinterest-feature-image:hover {
-            filter: grayscale(0) contrast(1) brightness(1);
         }
     </style>
 </head>
 <body>
 
     <div class="cyber-grid"></div>
-    <div class="image-overlay"></div>
-    
     <div class="glow-orb" style="top: -100px; left: -100px;"></div>
     <div class="glow-orb" style="bottom: -200px; right: -100px; background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);"></div>
 
@@ -166,16 +143,12 @@
     <nav class="fixed w-full z-50 nav-blur px-8 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 border border-cyan-500/30 bg-cyan-500/5 rounded-lg flex items-center justify-center text-cyan-500 shadow-[0_0_15px_rgba(0,242,255,0.2)]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <line x1="12" y1="8" x2="12" y2="16"/>
-                        <line x1="8" y1="12" x2="16" y2="12"/>
-                    </svg>
+                <div class="w-10 h-10 border border-cyan-500 flex items-center justify-center font-bold text-cyan-500 rotate-45">
+                    <span class="-rotate-45">G</span>
                 </div>
                 <div class="hidden sm:block">
                     <h1 class="text-sm font-black tracking-widest uppercase">Gichui <span class="text-cyan-500">Systems</span></h1>
-                    <p class="text-[8px] mono text-slate-500 tracking-widest leading-none">CORE.TERMINAL.V2.5.0</p>
+                    <p class="text-[8px] mono text-slate-500 tracking-widest leading-none">TERMINAL.V2.5.0</p>
                 </div>
             </div>
             <div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
@@ -191,10 +164,10 @@
     <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
         <div class="max-w-4xl w-full text-center relative">
             <div class="mono text-[10px] text-cyan-500 mb-4 tracking-[0.5em] animate-pulse">DEPLOYING SOCIO-TECHNICAL SOLUTION...</div>
-            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
+            <h1 class="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
                 EQUALITY <br/> <span class="text-neon italic">BY ARCHITECTURE.</span>
             </h1>
-            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
                 Patrick Gichui is a software architect bridging the healthcare gap. Engineering 
                 <span class="text-white border-b border-cyan-500">decentralized medical intelligence</span> for the 99%.
             </p>
@@ -218,8 +191,8 @@
                         Millions in East Africa are excluded from specialist consultations due to geographic 
                         and financial bottlenecks. 
                     </p>
-                    <div class="p-6 bg-cyan-500/10 border-l-2 border-cyan-500">
-                        <p class="text-xs italic text-slate-200">"We don't just build apps; we engineer equity. Our technology serves as a bridge between high-tier medical expertise and those the system has forgotten."</p>
+                    <div class="p-6 bg-cyan-500/5 border-l-2 border-cyan-500">
+                        <p class="text-xs italic text-slate-300">"We don't just build apps; we engineer equity. Our technology serves as a bridge between high-tier medical expertise and those the system has forgotten."</p>
                     </div>
                 </div>
                 <div class="space-y-6">
@@ -235,7 +208,7 @@
                     </div>
                     <div class="futuristic-card p-10 rounded-lg">
                         <h4 class="text-xs font-bold text-cyan-500 mb-4 tracking-widest uppercase">Target Objective // 2028</h4>
-                        <p class="text-sm text-slate-300 leading-relaxed">
+                        <p class="text-sm text-slate-400 leading-relaxed">
                             Establishment of an independent engineering HQ in Nairobi. Scaling **Insta Med** to support 1M+ active sessions across the East African region.
                         </p>
                     </div>
@@ -248,8 +221,8 @@
     <section id="ventures" class="py-32 px-6 relative">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20">
-                <div class="tag-pill mb-4 inline-block">Flagship Operation</div>
-                <h2 class="text-5xl font-black italic uppercase">INSTA <span class="text-neon">MED.</span></h2>
+                <div class="tag-pill mb-4 text-cyan-500 inline-block">Flagship Operation</div>
+                <h2 class="text-5xl font-black italic">INSTA <span class="text-neon">MED.</span></h2>
             </div>
 
             <div class="grid lg:grid-cols-12 gap-6">
@@ -261,6 +234,7 @@
                             <div class="text-[8px] px-2 py-1 border border-red-500 text-red-500 animate-pulse uppercase font-bold">Live Data Feed</div>
                         </div>
                         
+                        <!-- Symbolic AI UI -->
                         <div class="space-y-4">
                             <div class="h-1 w-1/3 bg-cyan-500"></div>
                             <div class="h-1 w-1/4 bg-cyan-500 opacity-50"></div>
@@ -305,87 +279,73 @@
         </div>
     </section>
 
-    <!-- Dossier (CV) with Pinterest Image Integration -->
+    <!-- Dossier (CV) -->
     <section id="dossier" class="py-32 px-6">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-20">
-                <div class="tag-pill mb-4 inline-block">Subject Dossier</div>
-                <h2 class="text-4xl font-bold">PATRICK <span class="text-cyan-500">GICHUI.</span></h2>
+                <div class="tag-pill mb-4 text-cyan-500 inline-block">Subject Dossier</div>
+                <h2 class="text-4xl font-bold">Patrick <span class="text-cyan-500">Gichui.</span></h2>
             </div>
 
-            <div class="grid md:grid-cols-12 gap-6">
-                <!-- Pinterest High-Tech Visual -->
-                <div class="md:col-span-4 futuristic-card rounded-2xl overflow-hidden relative min-h-[500px]">
-                    <img src="https://i.pinimg.com/1200x/47/31/40/47314047c396f9df922778af484ebde6.jpg" alt="Technical Visual" class="pinterest-feature-image">
-                    <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent">
-                        <div class="mono text-[10px] text-cyan-500 mb-2">VISUAL_REF: 473140</div>
-                        <h5 class="text-xl font-black italic uppercase">System <br/> Aesthetics</h5>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Certs -->
+                <div class="space-y-6">
+                    <div class="futuristic-card p-6 rounded-xl">
+                        <div class="mono text-[8px] text-cyan-500 mb-4">CERTIFICATION_ID: HP_LIFE</div>
+                        <h5 class="font-bold text-sm mb-1 uppercase">Business IT Specialist</h5>
+                        <p class="text-[10px] text-slate-500">Strategic market scaling & commercial logic certified by HP Life.</p>
                     </div>
-                    <div class="scan-line"></div>
+                    <div class="futuristic-card p-6 rounded-xl">
+                        <div class="mono text-[8px] text-cyan-500 mb-4">AWARD_ID: KSEF_REGIONAL</div>
+                        <h5 class="font-bold text-sm mb-1 uppercase">Regional Finalist '25 '26</h5>
+                        <p class="text-[10px] text-slate-500">Twice-recognized for excellence in Computer Science & Chemical Engineering.</p>
+                    </div>
                 </div>
 
                 <!-- Main CV -->
-                <div class="md:col-span-8 space-y-6">
-                    <div class="futuristic-card p-10 rounded-2xl relative overflow-hidden">
-                        <div class="flex justify-between items-start mb-10">
-                            <div>
-                                <h3 class="text-3xl font-black uppercase tracking-tighter">Software Architect</h3>
-                                <p class="text-xs text-slate-500 mono mt-1">Nairobi, Kenya // Dawamu School</p>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-cyan-500 mono text-xs font-bold border border-cyan-500/30 px-3 py-1 rounded">V.2026.04</span>
-                            </div>
+                <div class="md:col-span-2 futuristic-card p-10 rounded-2xl relative overflow-hidden">
+                    <div class="scan-line" style="animation-duration: 5s; opacity: 0.2;"></div>
+                    <div class="flex justify-between items-start mb-10">
+                        <div>
+                            <h3 class="text-2xl font-bold uppercase">Software Architect</h3>
+                            <p class="text-xs text-slate-500 mono mt-1">Nairobi, Kenya // Dawamu School</p>
                         </div>
-
-                        <div class="grid sm:grid-cols-2 gap-12">
-                            <div>
-                                <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-6">Expertise Stack</h4>
-                                <div class="space-y-4">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-1 h-1 bg-cyan-500 shadow-[0_0_5px_var(--accent)]"></div>
-                                        <span class="text-xs font-medium">Full Stack Architecture</span>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-1 h-1 bg-cyan-500 shadow-[0_0_5px_var(--accent)]"></div>
-                                        <span class="text-xs font-medium">AI/ML Implementation</span>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-1 h-1 bg-cyan-500 shadow-[0_0_5px_var(--accent)]"></div>
-                                        <span class="text-xs font-medium">Cloud Infrastructure</span>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-1 h-1 bg-cyan-500 shadow-[0_0_5px_var(--accent)]"></div>
-                                        <span class="text-xs font-medium">IoT Sensor Networking</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="space-y-8">
-                                <div>
-                                    <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Credentials</h4>
-                                    <div class="space-y-4">
-                                        <div>
-                                            <p class="text-[10px] mono text-slate-500">AWD_01</p>
-                                            <p class="text-xs font-bold uppercase">KSEF Regional Winner</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-[10px] mono text-slate-500">CRT_01</p>
-                                            <p class="text-xs font-bold uppercase">HP Life IT Specialist</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-right">
+                            <span class="text-cyan-500 mono text-xs">V.2026.04</span>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="futuristic-card p-8 rounded-2xl">
-                            <h4 class="text-xs font-bold text-cyan-500 uppercase mb-4">Current Focus</h4>
-                            <p class="text-sm font-bold uppercase leading-tight">Insta Med <br/> Deployment</p>
+                    <div class="space-y-10">
+                        <div>
+                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Core Competencies</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> Full Stack (Next.js/Node)
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> AI/ML Implementation
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> Firebase Architecture
+                                </div>
+                                <div class="text-xs text-slate-300 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-cyan-500"></span> IoT & Embedded Systems
+                                </div>
+                            </div>
                         </div>
-                        <div class="futuristic-card p-8 rounded-2xl">
-                            <h4 class="text-xs font-bold text-cyan-500 uppercase mb-4">Research</h4>
-                            <p class="text-sm font-bold uppercase leading-tight">Automated <br/> Triage AI</p>
+
+                        <div>
+                            <h4 class="text-xs font-bold text-cyan-500 uppercase tracking-widest mb-4">Active Deployments</h4>
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="text-sm font-bold">Founder @ Insta Med</p>
+                                    <p class="text-xs text-slate-500">Engineering a non-profit volunteer medical consultation framework.</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold">Lead Engineer @ KSEF Projects</p>
+                                    <p class="text-xs text-slate-500">Designing automated chemical extraction sensors (Regional Winner).</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -397,15 +357,15 @@
     <section id="contact" class="py-32 px-6 relative">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
-                <div class="tag-pill mb-4 inline-block">Direct Uplink</div>
-                <h2 class="text-4xl font-bold tracking-tight italic">INITIATE <span class="text-cyan-500">CONTACT.</span></h2>
+                <div class="tag-pill mb-4 text-cyan-500 inline-block">Direct Uplink</div>
+                <h2 class="text-4xl font-bold tracking-tight">INITIATE <span class="text-cyan-500">CONTACT.</span></h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
                 <a href="mailto:patrickgichui.dev@gmail.com" class="futuristic-card p-8 rounded-xl text-center group">
                     <div class="text-cyan-500 text-2xl mb-4 group-hover:scale-110 transition">✉</div>
                     <h4 class="text-[10px] mono text-slate-500 uppercase mb-2">Secure Email</h4>
-                    <p class="text-[10px] font-bold break-all">patrickgichui.dev@gmail.com</p>
+                    <p class="text-xs font-bold break-all">patrickgichui.dev@gmail.com</p>
                 </a>
                 
                 <a href="tel:0722654031" class="futuristic-card p-8 rounded-xl text-center group">
@@ -425,7 +385,7 @@
 
     <!-- Footer -->
     <footer class="py-20 px-6 text-center border-t border-white/5 relative overflow-hidden">
-        <div class="glow-orb" style="bottom: -250px; left: 50%; translate: -50% 0; width: 800px; height: 300px;"></div>
+        <div class="glow-orb" style="bottom: -250px; left: 50%; translate: -50% 0; width: 600px; height: 300px;"></div>
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold mb-8 italic uppercase tracking-tighter">Invest in <span class="text-neon">Equity.</span></h2>
             <p class="mono text-[8px] text-slate-600 tracking-[0.8em]">END_TRANSMISSION // PATRICK GICHUI 2026</p>
